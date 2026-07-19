@@ -1,0 +1,1673 @@
+[
+  {
+    "query_number": 1,
+    "query": "What is the refund policy for standard customers?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "refund_policy_standard_customers.pdf"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 2,
+    "hybrid_rank": 2,
+    "category": "success_low_rank",
+    "dense_top_5": [
+      "refund_policy_enterprise_customers.pdf",
+      "refund_policy_standard_customers.pdf",
+      "faq_common_product_questions.md",
+      "scanned_customer_complaint_letters_archive.pdf",
+      "customer_onboarding_playbook.html"
+    ],
+    "sparse_top_5": [
+      "faq_common_product_questions.md",
+      "refund_policy_standard_customers.pdf",
+      "refund_policy_enterprise_customers.pdf",
+      "customer_onboarding_playbook.html",
+      "live_chat_response_guidelines.html"
+    ],
+    "hybrid_top_5": [
+      "refund_policy_enterprise_customers.pdf",
+      "refund_policy_standard_customers.pdf",
+      "faq_common_product_questions.md"
+    ]
+  },
+  {
+    "query_number": 2,
+    "query": "What is the refund policy for enterprise customers?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "refund_policy_enterprise_customers.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 2,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "refund_policy_enterprise_customers.pdf",
+      "refund_policy_standard_customers.pdf",
+      "faq_common_product_questions.md",
+      "scanned_customer_complaint_letters_archive.pdf",
+      "customer_onboarding_playbook.html"
+    ],
+    "sparse_top_5": [
+      "faq_common_product_questions.md",
+      "refund_policy_enterprise_customers.pdf",
+      "refund_policy_standard_customers.pdf",
+      "customer_onboarding_playbook.html",
+      "live_chat_response_guidelines.html"
+    ],
+    "hybrid_top_5": [
+      "refund_policy_enterprise_customers.pdf",
+      "faq_common_product_questions.md",
+      "refund_policy_standard_customers.pdf"
+    ]
+  },
+  {
+    "query_number": 3,
+    "query": "How do employees enroll in benefits?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "benefits_enrollment_guide_2025.pdf"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "annual_leave_policy.pdf",
+      "benefits_enrollment_guide_2025.pdf",
+      "regional_leave_policy_india.pdf",
+      "sick_leave_policy.pdf",
+      "contractor_leave_policy.pdf"
+    ],
+    "sparse_top_5": [
+      "benefits_enrollment_guide_2025.pdf",
+      "regional_leave_policy_india.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "sick_leave_policy.pdf",
+      "annual_leave_policy.pdf"
+    ],
+    "hybrid_top_5": [
+      "benefits_enrollment_guide_2025.pdf",
+      "sick_leave_policy.pdf",
+      "regional_leave_policy_india.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "annual_leave_policy.pdf"
+    ]
+  },
+  {
+    "query_number": 4,
+    "query": "What is the annual leave policy?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "annual_leave_policy.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "annual_leave_policy.pdf",
+      "regional_leave_policy_india.pdf",
+      "contractor_leave_policy.pdf",
+      "sick_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx"
+    ],
+    "sparse_top_5": [
+      "annual_leave_policy.pdf",
+      "sick_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "contractor_leave_policy.pdf",
+      "regional_leave_policy_india.pdf"
+    ],
+    "hybrid_top_5": [
+      "annual_leave_policy.pdf",
+      "contractor_leave_policy.pdf",
+      "sick_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "regional_leave_policy_india.pdf"
+    ]
+  },
+  {
+    "query_number": 5,
+    "query": "What is the sick leave policy?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "sick_leave_policy.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "sick_leave_policy.pdf",
+      "annual_leave_policy.pdf",
+      "regional_leave_policy_india.pdf",
+      "contractor_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx"
+    ],
+    "sparse_top_5": [
+      "sick_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "annual_leave_policy.pdf",
+      "contractor_leave_policy.pdf",
+      "regional_leave_policy_india.pdf"
+    ],
+    "hybrid_top_5": [
+      "sick_leave_policy.pdf",
+      "annual_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "contractor_leave_policy.pdf",
+      "regional_leave_policy_india.pdf"
+    ]
+  },
+  {
+    "query_number": 6,
+    "query": "What is the maternity and parental leave policy?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "maternity_and_parental_leave_policy.docx"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "maternity_and_parental_leave_policy.docx",
+      "annual_leave_policy.pdf",
+      "contractor_leave_policy.pdf",
+      "sick_leave_policy.pdf",
+      "regional_leave_policy_india.pdf"
+    ],
+    "sparse_top_5": [
+      "maternity_and_parental_leave_policy.docx",
+      "sick_leave_policy.pdf",
+      "annual_leave_policy.pdf",
+      "contractor_leave_policy.pdf",
+      "regional_leave_policy_india.pdf"
+    ],
+    "hybrid_top_5": [
+      "maternity_and_parental_leave_policy.docx",
+      "annual_leave_policy.pdf",
+      "sick_leave_policy.pdf",
+      "contractor_leave_policy.pdf",
+      "regional_leave_policy_india.pdf"
+    ]
+  },
+  {
+    "query_number": 7,
+    "query": "What is the regional leave policy for India?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "regional_leave_policy_india.pdf"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "sick_leave_policy.pdf",
+      "regional_leave_policy_india.pdf",
+      "contractor_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "annual_leave_policy.pdf"
+    ],
+    "sparse_top_5": [
+      "regional_leave_policy_india.pdf",
+      "holiday_calendar_2025.md",
+      "contractor_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "annual_leave_policy.pdf"
+    ],
+    "hybrid_top_5": [
+      "regional_leave_policy_india.pdf",
+      "annual_leave_policy.pdf",
+      "contractor_leave_policy.pdf",
+      "sick_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx"
+    ]
+  },
+  {
+    "query_number": 8,
+    "query": "Which API endpoint handles document ingestion?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "api_endpoint_inventory.csv"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "sample.txt",
+      "api_endpoint_inventory.csv",
+      "api_rate_limiting_design_document.pdf",
+      "ci_cd_pipeline_architecture.pdf",
+      "system_architecture_overview.pdf"
+    ],
+    "sparse_top_5": [
+      "api_endpoint_inventory.csv",
+      "service_uptime_metrics_q1_q4_2025.csv",
+      "sample.txt",
+      "api_rate_limiting_design_document.pdf",
+      "employee_sso_authentication_guide.html"
+    ],
+    "hybrid_top_5": [
+      "api_endpoint_inventory.csv",
+      "sample.txt",
+      "api_rate_limiting_design_document.pdf",
+      "service_uptime_metrics_q1_q4_2025.csv"
+    ]
+  },
+  {
+    "query_number": 9,
+    "query": "What are the API rate limiting rules?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "api_rate_limiting_design_document.pdf"
+    ],
+    "dense_rank": 5,
+    "sparse_rank": 1,
+    "hybrid_rank": 2,
+    "category": "success_low_rank",
+    "dense_top_5": [
+      "service_uptime_metrics_q1_q4_2025.csv",
+      "api_endpoint_inventory.csv",
+      "payment_api_authentication_guide.html",
+      "employee_sso_authentication_guide.html",
+      "api_rate_limiting_design_document.pdf"
+    ],
+    "sparse_top_5": [
+      "api_rate_limiting_design_document.pdf",
+      "payment_api_authentication_guide.html",
+      "api_endpoint_inventory.csv",
+      "customer_application_sso_integration_guide.md",
+      "employee_sso_authentication_guide.html"
+    ],
+    "hybrid_top_5": [
+      "api_endpoint_inventory.csv",
+      "api_rate_limiting_design_document.pdf",
+      "payment_api_authentication_guide.html",
+      "service_uptime_metrics_q1_q4_2025.csv",
+      "employee_sso_authentication_guide.html"
+    ]
+  },
+  {
+    "query_number": 10,
+    "query": "How does the CI/CD pipeline work?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "ci_cd_pipeline_architecture.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "ci_cd_pipeline_architecture.pdf",
+      "data_center_migration_report_2019.pdf",
+      "legacy_mainframe_integration_notes_2018.pdf",
+      "code_review_standards.docx",
+      "kubernetes_deployment_runbook.pdf"
+    ],
+    "sparse_top_5": [
+      "ci_cd_pipeline_architecture.pdf",
+      "infrastructure_cost_breakdown_by_service.xlsx",
+      "customer_application_sso_integration_guide.md",
+      "payment_api_authentication_guide.html",
+      "employee_sso_authentication_guide.html"
+    ],
+    "hybrid_top_5": [
+      "ci_cd_pipeline_architecture.pdf",
+      "infrastructure_cost_breakdown_by_service.xlsx",
+      "data_center_migration_report_2019.pdf",
+      "kubernetes_deployment_runbook.pdf",
+      "engineering_onboarding_handbook.docx"
+    ]
+  },
+  {
+    "query_number": 11,
+    "query": "How is the payment API authenticated?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "payment_api_authentication_guide.html"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "payment_api_authentication_guide.html",
+      "customer_application_sso_integration_guide.md",
+      "employee_sso_authentication_guide.html",
+      "sample.html",
+      "sample.txt"
+    ],
+    "sparse_top_5": [
+      "payment_api_authentication_guide.html",
+      "sample.html",
+      "api_rate_limiting_design_document.pdf",
+      "microservices_architecture_decision_record.pdf",
+      "system_architecture_overview.pdf"
+    ],
+    "hybrid_top_5": [
+      "payment_api_authentication_guide.html",
+      "sample.html",
+      "customer_application_sso_integration_guide.md",
+      "employee_sso_authentication_guide.html",
+      "api_rate_limiting_design_document.pdf"
+    ]
+  },
+  {
+    "query_number": 12,
+    "query": "What are the service uptime metrics for 2025?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "service_uptime_metrics_q1_q4_2025.csv"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "service_uptime_metrics_q1_q4_2025.csv",
+      "database_connection_failure_incident_report_inc_2024_114.pdf",
+      "microservices_architecture_decision_record.pdf",
+      "ci_cd_pipeline_architecture.pdf",
+      "api_rate_limiting_design_document.pdf"
+    ],
+    "sparse_top_5": [
+      "service_uptime_metrics_q1_q4_2025.csv",
+      "employee_sso_authentication_guide.html",
+      "microservices_architecture_decision_record.pdf",
+      "system_architecture_overview.pdf",
+      "api_rate_limiting_design_document.pdf"
+    ],
+    "hybrid_top_5": [
+      "service_uptime_metrics_q1_q4_2025.csv",
+      "api_rate_limiting_design_document.pdf",
+      "system_architecture_overview.pdf",
+      "data_center_migration_report_2019.pdf"
+    ]
+  },
+  {
+    "query_number": 13,
+    "query": "What does ARR mean?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "finance_glossary_of_terms.md"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "historical_board_financial_minutes_2016.pdf",
+      "finance_glossary_of_terms.md",
+      "scanned_signed_invoice_batch_vendor_payments.pdf",
+      "finance_team_directory_and_approval_limits.json",
+      "procurement_approval_workflow.html"
+    ],
+    "sparse_top_5": [
+      "finance_glossary_of_terms.md"
+    ],
+    "hybrid_top_5": [
+      "finance_glossary_of_terms.md",
+      "historical_board_financial_minutes_2016.pdf",
+      "scanned_signed_invoice_batch_vendor_payments.pdf",
+      "finance_team_directory_and_approval_limits.json"
+    ]
+  },
+  {
+    "query_number": 14,
+    "query": "What does ASC 606 mean?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "finance_glossary_of_terms.md"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "finance_glossary_of_terms.md",
+      "historical_board_financial_minutes_2016.pdf",
+      "revenue_recognition_policy.pdf",
+      "finance_team_directory_and_approval_limits.json",
+      "cost_center_definitions.docx"
+    ],
+    "sparse_top_5": [
+      "finance_glossary_of_terms.md",
+      "revenue_recognition_policy.pdf"
+    ],
+    "hybrid_top_5": [
+      "finance_glossary_of_terms.md",
+      "revenue_recognition_policy.pdf",
+      "historical_board_financial_minutes_2016.pdf",
+      "finance_team_directory_and_approval_limits.json"
+    ]
+  },
+  {
+    "query_number": 15,
+    "query": "How do I reset my password?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "faq_common_product_questions.md"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "faq_common_product_questions.md",
+      "support_team_contacts_and_shift_schedule.json",
+      "live_chat_response_guidelines.html",
+      "support_ticket_export_q1_2025.csv"
+    ],
+    "sparse_top_5": [
+      "faq_common_product_questions.md",
+      "scanned_warranty_claim_forms_batch.pdf",
+      "scanned_customer_complaint_letters_archive.pdf"
+    ],
+    "hybrid_top_5": [
+      "faq_common_product_questions.md",
+      "scanned_warranty_claim_forms_batch.pdf",
+      "scanned_customer_complaint_letters_archive.pdf",
+      "support_team_contacts_and_shift_schedule.json"
+    ]
+  },
+  {
+    "query_number": 16,
+    "query": "What are the common product questions?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "faq_common_product_questions.md"
+    ],
+    "dense_rank": null,
+    "sparse_rank": 1,
+    "hybrid_rank": null,
+    "category": "dense_miss_fusion_failure",
+    "dense_top_5": [
+      "support_team_contacts_and_shift_schedule.json",
+      "support_ticket_export_q2_2025.csv",
+      "support_ticket_export_q1_2025.csv",
+      "support_ticket_volume_by_category.xlsx",
+      "product_troubleshooting_manual_core_platform.pdf"
+    ],
+    "sparse_top_5": [
+      "faq_common_product_questions.md",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "product_troubleshooting_manual_core_platform.pdf",
+      "product_manual_enterprise_suite_v3.docx",
+      "known_issues_and_workarounds_log.pdf"
+    ],
+    "hybrid_top_5": [
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "product_troubleshooting_manual_core_platform.pdf",
+      "product_manual_enterprise_suite_v3.docx",
+      "support_ticket_export_q2_2025.csv",
+      "support_ticket_export_q1_2025.csv"
+    ]
+  },
+  {
+    "query_number": 17,
+    "query": "What is the document ingestion endpoint rate limit?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "api_endpoint_inventory.csv"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "sample.txt",
+      "api_endpoint_inventory.csv",
+      "service_uptime_metrics_q1_q4_2025.csv",
+      "sample.html",
+      "code_review_standards.docx"
+    ],
+    "sparse_top_5": [
+      "api_endpoint_inventory.csv",
+      "api_rate_limiting_design_document.pdf",
+      "customer_application_sso_integration_guide.md",
+      "sample.txt",
+      "payment_api_authentication_guide.html"
+    ],
+    "hybrid_top_5": [
+      "api_endpoint_inventory.csv",
+      "sample.txt",
+      "api_rate_limiting_design_document.pdf",
+      "service_uptime_metrics_q1_q4_2025.csv"
+    ]
+  },
+  {
+    "query_number": 18,
+    "query": "Who owns the Query Service in the system architecture?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "ci_cd_pipeline_architecture.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 3,
+    "hybrid_rank": 3,
+    "category": "success_low_rank",
+    "dense_top_5": [
+      "ci_cd_pipeline_architecture.pdf",
+      "microservices_architecture_decision_record.pdf",
+      "system_architecture_overview.pdf",
+      "api_rate_limiting_design_document.pdf",
+      "api_endpoint_inventory.csv"
+    ],
+    "sparse_top_5": [
+      "system_architecture_overview.pdf",
+      "microservices_architecture_decision_record.pdf",
+      "ci_cd_pipeline_architecture.pdf",
+      "api_rate_limiting_design_document.pdf",
+      "api_endpoint_inventory.csv"
+    ],
+    "hybrid_top_5": [
+      "system_architecture_overview.pdf",
+      "microservices_architecture_decision_record.pdf",
+      "ci_cd_pipeline_architecture.pdf",
+      "api_rate_limiting_design_document.pdf",
+      "api_endpoint_inventory.csv"
+    ]
+  },
+  {
+    "query_number": 19,
+    "query": "What steps are involved in benefits enrollment?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "benefits_enrollment_guide_2025.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "benefits_enrollment_guide_2025.pdf",
+      "sick_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "annual_leave_policy.pdf",
+      "contractor_leave_policy.pdf"
+    ],
+    "sparse_top_5": [
+      "benefits_enrollment_guide_2025.pdf",
+      "employee_grievance_procedure.docx",
+      "diversity_and_inclusion_program_overview.docx",
+      "signed_offer_letter_template_archive.pdf",
+      "performance_review_process.html"
+    ],
+    "hybrid_top_5": [
+      "benefits_enrollment_guide_2025.pdf",
+      "sick_leave_policy.pdf",
+      "performance_review_process.html",
+      "maternity_and_parental_leave_policy.docx"
+    ]
+  },
+  {
+    "query_number": 20,
+    "query": "What are the refund rules for Standard-tier customers?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "refund_policy_standard_customers.pdf"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 2,
+    "hybrid_rank": 2,
+    "category": "success_low_rank",
+    "dense_top_5": [
+      "refund_policy_enterprise_customers.pdf",
+      "refund_policy_standard_customers.pdf",
+      "customer_onboarding_playbook.html",
+      "service_level_agreement_support_tiers.pdf",
+      "faq_common_product_questions.md"
+    ],
+    "sparse_top_5": [
+      "faq_common_product_questions.md",
+      "refund_policy_standard_customers.pdf",
+      "refund_policy_enterprise_customers.pdf",
+      "customer_onboarding_playbook.html",
+      "live_chat_response_guidelines.html"
+    ],
+    "hybrid_top_5": [
+      "refund_policy_enterprise_customers.pdf",
+      "refund_policy_standard_customers.pdf",
+      "faq_common_product_questions.md"
+    ]
+  },
+  {
+    "query_number": 21,
+    "query": "What expenses can employees claim for reimbursement?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "expense_reimbursement_policy.html"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "expense_reimbursement_policy.html",
+      "finance_glossary_of_terms.md",
+      "fy2025_departmental_budget.xlsx",
+      "revenue_recognition_policy.pdf",
+      "capital_expenditure_plan_2025.pdf"
+    ],
+    "sparse_top_5": [
+      "expense_reimbursement_policy.html",
+      "annual_report_fy2025.pdf",
+      "capital_expenditure_plan_2025.pdf",
+      "internal_audit_report_procurement.pdf",
+      "quarterly_earnings_summary_q1_2025.pdf"
+    ],
+    "hybrid_top_5": [
+      "expense_reimbursement_policy.html",
+      "revenue_recognition_policy.pdf",
+      "internal_audit_report_procurement.pdf",
+      "budget_variance_report_template.docx",
+      "finance_glossary_of_terms.md"
+    ]
+  },
+  {
+    "query_number": 22,
+    "query": "What is the company's revenue recognition policy?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "revenue_recognition_policy.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "revenue_recognition_policy.pdf",
+      "finance_glossary_of_terms.md",
+      "annual_report_fy2024.pdf",
+      "internal_audit_report_procurement.pdf",
+      "annual_report_fy2025.pdf"
+    ],
+    "sparse_top_5": [
+      "revenue_recognition_policy.pdf",
+      "finance_glossary_of_terms.md",
+      "annual_report_fy2024.pdf",
+      "annual_report_fy2025.pdf",
+      "capital_expenditure_plan_2025.pdf"
+    ],
+    "hybrid_top_5": [
+      "revenue_recognition_policy.pdf",
+      "finance_glossary_of_terms.md",
+      "annual_report_fy2025.pdf",
+      "quarterly_earnings_summary_q1_2025.pdf"
+    ]
+  },
+  {
+    "query_number": 23,
+    "query": "How did revenue vary by geographic region?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "monthly_revenue_by_region.csv"
+    ],
+    "dense_rank": 7,
+    "sparse_rank": null,
+    "hybrid_rank": null,
+    "category": "sparse_miss_fusion_failure",
+    "dense_top_5": [
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "annual_report_fy2024.pdf",
+      "capital_expenditure_plan_2025.pdf",
+      "annual_report_fy2025.pdf",
+      "internal_audit_report_procurement.pdf"
+    ],
+    "sparse_top_5": [
+      "finance_glossary_of_terms.md",
+      "annual_report_fy2025.pdf",
+      "capital_expenditure_plan_2025.pdf",
+      "annual_report_fy2024.pdf",
+      "quarterly_earnings_summary_q1_2025.pdf"
+    ],
+    "hybrid_top_5": [
+      "annual_report_fy2024.pdf",
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "annual_report_fy2025.pdf",
+      "capital_expenditure_plan_2025.pdf",
+      "internal_audit_report_procurement.pdf"
+    ]
+  },
+  {
+    "query_number": 24,
+    "query": "What were the financial results for Q1 2025?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "quarterly_earnings_summary_q1_2025.pdf"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "quarterly_earnings_summary_q2_2025.pdf",
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "internal_audit_report_procurement.pdf",
+      "annual_report_fy2025.pdf",
+      "capital_expenditure_plan_2025.pdf"
+    ],
+    "sparse_top_5": [
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "quarterly_earnings_summary_q2_2025.pdf",
+      "annual_report_fy2024.pdf",
+      "internal_audit_report_procurement.pdf",
+      "capital_expenditure_plan_2025.pdf"
+    ],
+    "hybrid_top_5": [
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "quarterly_earnings_summary_q2_2025.pdf",
+      "internal_audit_report_procurement.pdf",
+      "annual_report_fy2024.pdf",
+      "capital_expenditure_plan_2025.pdf"
+    ]
+  },
+  {
+    "query_number": 25,
+    "query": "What are the approval limits for the finance team?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "finance_team_directory_and_approval_limits.json"
+    ],
+    "dense_rank": 8,
+    "sparse_rank": 17,
+    "hybrid_rank": null,
+    "category": "fusion_ranking_failure",
+    "dense_top_5": [
+      "cost_center_definitions.docx",
+      "expense_reimbursement_policy.html",
+      "budget_variance_report_template.docx",
+      "finance_controls_narrative_sox.docx",
+      "procurement_approval_workflow.html"
+    ],
+    "sparse_top_5": [
+      "expense_reimbursement_policy.html",
+      "procurement_approval_workflow.html",
+      "finance_controls_narrative_sox.docx",
+      "revenue_recognition_policy.pdf",
+      "budget_variance_report_template.docx"
+    ],
+    "hybrid_top_5": [
+      "expense_reimbursement_policy.html",
+      "finance_controls_narrative_sox.docx",
+      "procurement_approval_workflow.html",
+      "cost_center_definitions.docx",
+      "budget_variance_report_template.docx"
+    ]
+  },
+  {
+    "query_number": 26,
+    "query": "How are cost centers defined within the company?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "cost_center_definitions.docx"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "cost_center_definitions.docx",
+      "finance_glossary_of_terms.md",
+      "fy2025_departmental_budget.xlsx",
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "quarterly_earnings_summary_q2_2025.pdf"
+    ],
+    "sparse_top_5": [
+      "cost_center_definitions.docx",
+      "annual_report_fy2024.pdf",
+      "annual_report_fy2025.pdf",
+      "capital_expenditure_plan_2025.pdf",
+      "quarterly_earnings_summary_q1_2025.pdf"
+    ],
+    "hybrid_top_5": [
+      "cost_center_definitions.docx",
+      "finance_glossary_of_terms.md",
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "annual_report_fy2025.pdf"
+    ]
+  },
+  {
+    "query_number": 27,
+    "query": "What is the capital expenditure plan for 2025?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "capital_expenditure_plan_2025.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 2,
+    "hybrid_rank": 2,
+    "category": "success_low_rank",
+    "dense_top_5": [
+      "capital_expenditure_plan_2025.pdf",
+      "finance_glossary_of_terms.md",
+      "monthly_revenue_by_region.csv",
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "quarterly_earnings_summary_q2_2025.pdf"
+    ],
+    "sparse_top_5": [
+      "finance_glossary_of_terms.md",
+      "capital_expenditure_plan_2025.pdf",
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "quarterly_earnings_summary_q2_2025.pdf",
+      "procurement_approval_workflow.html"
+    ],
+    "hybrid_top_5": [
+      "finance_glossary_of_terms.md",
+      "capital_expenditure_plan_2025.pdf",
+      "quarterly_earnings_summary_q1_2025.pdf",
+      "quarterly_earnings_summary_q2_2025.pdf",
+      "annual_report_fy2025.pdf"
+    ]
+  },
+  {
+    "query_number": 28,
+    "query": "How does the procurement approval process work?",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "relevant_documents": [
+      "procurement_approval_workflow.html"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "procurement_approval_workflow.html",
+      "budget_variance_report_template.docx",
+      "cost_center_definitions.docx",
+      "finance_controls_narrative_sox.docx",
+      "scanned_signed_invoice_batch_vendor_payments.pdf"
+    ],
+    "sparse_top_5": [
+      "procurement_approval_workflow.html",
+      "finance_glossary_of_terms.md",
+      "budget_variance_report_template.docx",
+      "historical_board_financial_minutes_2016.pdf",
+      "finance_controls_narrative_sox.docx"
+    ],
+    "hybrid_top_5": [
+      "procurement_approval_workflow.html",
+      "scanned_signed_invoice_batch_vendor_payments.pdf",
+      "cost_center_definitions.docx",
+      "finance_glossary_of_terms.md",
+      "expense_reimbursement_policy.html"
+    ]
+  },
+  {
+    "query_number": 29,
+    "query": "What are the rules for working remotely?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "remote_work_policy.html"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 5,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "remote_work_policy.html",
+      "annual_leave_policy.pdf",
+      "code_of_conduct.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "employee_grievance_procedure.docx"
+    ],
+    "sparse_top_5": [
+      "performance_review_process.html",
+      "employee_onboarding_guide.pdf",
+      "benefits_enrollment_guide_2025.pdf",
+      "sick_leave_policy.pdf",
+      "remote_work_policy.html"
+    ],
+    "hybrid_top_5": [
+      "remote_work_policy.html",
+      "employee_onboarding_guide.pdf",
+      "code_of_conduct.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "annual_leave_policy.pdf"
+    ]
+  },
+  {
+    "query_number": 30,
+    "query": "How does the employee performance review process work?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "performance_review_process.html"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "performance_review_process.html",
+      "employee_onboarding_guide.pdf",
+      "code_of_conduct.pdf",
+      "employee_grievance_procedure.docx",
+      "benefits_enrollment_guide_2025.pdf"
+    ],
+    "sparse_top_5": [
+      "performance_review_process.html",
+      "remote_work_policy.html",
+      "annual_leave_policy.pdf",
+      "sick_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx"
+    ],
+    "hybrid_top_5": [
+      "performance_review_process.html",
+      "employee_grievance_procedure.docx",
+      "employee_handbook_archive_2018.pdf",
+      "employee_onboarding_guide.pdf"
+    ]
+  },
+  {
+    "query_number": 31,
+    "query": "What should a new employee do during onboarding?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "employee_onboarding_guide.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "employee_onboarding_guide.pdf",
+      "employee_handbook_archive_2018.pdf",
+      "code_of_conduct.pdf",
+      "employee_grievance_procedure.docx",
+      "diversity_and_inclusion_program_overview.docx"
+    ],
+    "sparse_top_5": [
+      "employee_onboarding_guide.pdf",
+      "code_of_conduct.pdf",
+      "benefits_enrollment_guide_2025.pdf",
+      "employee_grievance_procedure.docx",
+      "employee_handbook_archive_2018.pdf"
+    ],
+    "hybrid_top_5": [
+      "employee_onboarding_guide.pdf",
+      "code_of_conduct.pdf",
+      "employee_handbook_archive_2018.pdf",
+      "employee_grievance_procedure.docx",
+      "benefits_enrollment_guide_2025.pdf"
+    ]
+  },
+  {
+    "query_number": 32,
+    "query": "How can an employee submit a workplace grievance?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "employee_grievance_procedure.docx"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "employee_grievance_procedure.docx",
+      "employee_onboarding_guide.pdf",
+      "annual_leave_policy.pdf",
+      "regional_leave_policy_india.pdf",
+      "sick_leave_policy.pdf"
+    ],
+    "sparse_top_5": [
+      "employee_grievance_procedure.docx",
+      "contractor_leave_policy.pdf",
+      "regional_leave_policy_india.pdf",
+      "sick_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx"
+    ],
+    "hybrid_top_5": [
+      "employee_grievance_procedure.docx",
+      "employee_handbook_archive_2018.pdf",
+      "remote_work_policy.html",
+      "sick_leave_policy.pdf",
+      "regional_leave_policy_india.pdf"
+    ]
+  },
+  {
+    "query_number": 33,
+    "query": "Who should employees contact in the HR department?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "hr_contact_directory.json"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 15,
+    "hybrid_rank": null,
+    "category": "fusion_ranking_failure",
+    "dense_top_5": [
+      "hr_contact_directory.json",
+      "employee_grievance_procedure.docx",
+      "employee_handbook_archive_2018.pdf",
+      "performance_review_process.html",
+      "employee_satisfaction_survey_results.csv"
+    ],
+    "sparse_top_5": [
+      "regional_leave_policy_india.pdf",
+      "annual_leave_policy.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "sick_leave_policy.pdf",
+      "contractor_leave_policy.pdf"
+    ],
+    "hybrid_top_5": [
+      "code_of_conduct.pdf",
+      "performance_review_process.html",
+      "remote_work_policy.html",
+      "employee_onboarding_guide.pdf",
+      "employee_handbook_archive_2018.pdf"
+    ]
+  },
+  {
+    "query_number": 34,
+    "query": "What holidays are observed by the company in 2025?",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "relevant_documents": [
+      "holiday_calendar_2025.md"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "holiday_calendar_2025.md",
+      "regional_leave_policy_india.pdf",
+      "maternity_and_parental_leave_policy.docx",
+      "sick_leave_policy.pdf",
+      "contractor_leave_policy.pdf"
+    ],
+    "sparse_top_5": [
+      "holiday_calendar_2025.md",
+      "benefits_enrollment_guide_2025.pdf",
+      "performance_review_process.html",
+      "employee_onboarding_guide.pdf",
+      "sick_leave_policy.pdf"
+    ],
+    "hybrid_top_5": [
+      "holiday_calendar_2025.md",
+      "contractor_leave_policy.pdf",
+      "regional_leave_policy_india.pdf",
+      "sick_leave_policy.pdf",
+      "training_completion_log.csv"
+    ]
+  },
+  {
+    "query_number": 35,
+    "query": "What standards should engineers follow when reviewing code?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "code_review_standards.docx"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "code_review_standards.docx",
+      "sample.docx",
+      "incident_postmortem_template_and_guidelines.docx",
+      "engineering_onboarding_handbook.docx",
+      "legacy_mainframe_integration_notes_2018.pdf"
+    ],
+    "sparse_top_5": [
+      "code_review_standards.docx",
+      "database_connection_pool_exhaustion_incident_inc_2024_118.pdf",
+      "payment_api_authentication_guide.html",
+      "employee_sso_authentication_guide.html",
+      "database_connection_failure_incident_report_inc_2024_114.pdf"
+    ],
+    "hybrid_top_5": [
+      "code_review_standards.docx",
+      "incident_postmortem_template_and_guidelines.docx",
+      "engineering_onboarding_handbook.docx",
+      "legacy_mainframe_integration_notes_2018.pdf",
+      "kubernetes_deployment_runbook.pdf"
+    ]
+  },
+  {
+    "query_number": 36,
+    "query": "How should Kubernetes deployments be performed?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "kubernetes_deployment_runbook.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "kubernetes_deployment_runbook.pdf",
+      "engineering_team_directory_and_tech_stack.json",
+      "ci_cd_pipeline_architecture.pdf",
+      "system_architecture_overview.pdf",
+      "microservices_architecture_decision_record.pdf"
+    ],
+    "sparse_top_5": [
+      "kubernetes_deployment_runbook.pdf",
+      "engineering_team_directory_and_tech_stack.json",
+      "code_review_standards.docx",
+      "incident_postmortem_template_and_guidelines.docx",
+      "data_center_migration_report_2019.pdf"
+    ],
+    "hybrid_top_5": [
+      "kubernetes_deployment_runbook.pdf",
+      "engineering_team_directory_and_tech_stack.json",
+      "data_center_migration_report_2019.pdf",
+      "legacy_mainframe_integration_notes_2018.pdf"
+    ]
+  },
+  {
+    "query_number": 37,
+    "query": "What is the architecture of the company's microservices?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "microservices_architecture_decision_record.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "microservices_architecture_decision_record.pdf",
+      "system_architecture_overview.pdf",
+      "api_rate_limiting_design_document.pdf",
+      "ci_cd_pipeline_architecture.pdf",
+      "sample.md"
+    ],
+    "sparse_top_5": [
+      "microservices_architecture_decision_record.pdf",
+      "system_architecture_overview.pdf",
+      "ci_cd_pipeline_architecture.pdf",
+      "api_rate_limiting_design_document.pdf",
+      "kubernetes_deployment_runbook.pdf"
+    ],
+    "hybrid_top_5": [
+      "microservices_architecture_decision_record.pdf",
+      "system_architecture_overview.pdf",
+      "ci_cd_pipeline_architecture.pdf",
+      "api_rate_limiting_design_document.pdf",
+      "sample.md"
+    ]
+  },
+  {
+    "query_number": 38,
+    "query": "What should engineers do after a production incident?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "incident_postmortem_template_and_guidelines.docx"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 4,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "sample.docx",
+      "incident_postmortem_template_and_guidelines.docx",
+      "system_architecture_overview.pdf",
+      "microservices_architecture_decision_record.pdf",
+      "api_rate_limiting_design_document.pdf"
+    ],
+    "sparse_top_5": [
+      "database_connection_pool_exhaustion_incident_inc_2024_118.pdf",
+      "database_connection_failure_incident_report_inc_2024_114.pdf",
+      "infrastructure_cost_breakdown_by_service.xlsx",
+      "incident_postmortem_template_and_guidelines.docx",
+      "sample.docx"
+    ],
+    "hybrid_top_5": [
+      "incident_postmortem_template_and_guidelines.docx",
+      "infrastructure_cost_breakdown_by_service.xlsx",
+      "database_connection_pool_exhaustion_incident_inc_2024_118.pdf",
+      "database_connection_failure_incident_report_inc_2024_114.pdf"
+    ]
+  },
+  {
+    "query_number": 39,
+    "query": "Which technologies are used by the engineering teams?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "engineering_team_directory_and_tech_stack.json"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": null,
+    "hybrid_rank": null,
+    "category": "sparse_miss_fusion_failure",
+    "dense_top_5": [
+      "engineering_team_directory_and_tech_stack.json",
+      "engineering_onboarding_handbook.docx",
+      "microservices_architecture_decision_record.pdf",
+      "system_architecture_overview.pdf",
+      "ci_cd_pipeline_architecture.pdf"
+    ],
+    "sparse_top_5": [
+      "kubernetes_deployment_runbook.pdf",
+      "engineering_onboarding_handbook.docx",
+      "data_center_migration_report_2019.pdf",
+      "legacy_mainframe_integration_notes_2018.pdf",
+      "code_review_standards.docx"
+    ],
+    "hybrid_top_5": [
+      "engineering_onboarding_handbook.docx",
+      "legacy_mainframe_integration_notes_2018.pdf",
+      "code_review_standards.docx",
+      "system_architecture_overview.pdf",
+      "ci_cd_pipeline_architecture.pdf"
+    ]
+  },
+  {
+    "query_number": 40,
+    "query": "What caused the database connection failure incident?",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "relevant_documents": [
+      "database_connection_failure_incident_report_inc_2024_114.pdf"
+    ],
+    "dense_rank": 4,
+    "sparse_rank": 2,
+    "hybrid_rank": 3,
+    "category": "success_low_rank",
+    "dense_top_5": [
+      "sample.json",
+      "sample.docx",
+      "database_connection_pool_exhaustion_incident_inc_2024_118.pdf",
+      "database_connection_failure_incident_report_inc_2024_114.pdf",
+      "payment_api_authentication_guide.html"
+    ],
+    "sparse_top_5": [
+      "database_connection_pool_exhaustion_incident_inc_2024_118.pdf",
+      "database_connection_failure_incident_report_inc_2024_114.pdf",
+      "sample.json",
+      "sample.docx",
+      "incident_postmortem_template_and_guidelines.docx"
+    ],
+    "hybrid_top_5": [
+      "database_connection_pool_exhaustion_incident_inc_2024_118.pdf",
+      "sample.json",
+      "database_connection_failure_incident_report_inc_2024_114.pdf",
+      "sample.docx"
+    ]
+  },
+  {
+    "query_number": 41,
+    "query": "How should support tickets be escalated?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "support_ticket_escalation_policy.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "support_ticket_escalation_policy.pdf",
+      "csat_scores_by_month.xlsx",
+      "customer_success_escalation_runbook.docx",
+      "service_level_agreement_support_tiers.pdf",
+      "support_team_training_guide.docx"
+    ],
+    "sparse_top_5": [
+      "support_ticket_escalation_policy.pdf",
+      "faq_common_product_questions.md",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "known_issues_and_workarounds_log.pdf",
+      "product_troubleshooting_manual_core_platform.pdf"
+    ],
+    "hybrid_top_5": [
+      "support_ticket_escalation_policy.pdf",
+      "customer_success_escalation_runbook.docx",
+      "known_issues_and_workarounds_log.pdf",
+      "support_team_training_guide.docx",
+      "product_troubleshooting_manual_mobile_app.pdf"
+    ]
+  },
+  {
+    "query_number": 42,
+    "query": "What service levels are provided for different support tiers?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "service_level_agreement_support_tiers.pdf"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "customer_onboarding_playbook.html",
+      "service_level_agreement_support_tiers.pdf",
+      "refund_policy_enterprise_customers.pdf",
+      "live_chat_response_guidelines.html",
+      "refund_policy_standard_customers.pdf"
+    ],
+    "sparse_top_5": [
+      "service_level_agreement_support_tiers.pdf",
+      "live_chat_response_guidelines.html",
+      "refund_policy_enterprise_customers.pdf",
+      "faq_common_product_questions.md",
+      "customer_onboarding_playbook.html"
+    ],
+    "hybrid_top_5": [
+      "service_level_agreement_support_tiers.pdf",
+      "refund_policy_enterprise_customers.pdf",
+      "refund_policy_standard_customers.pdf",
+      "support_team_training_guide.docx",
+      "customer_success_escalation_runbook.docx"
+    ]
+  },
+  {
+    "query_number": 43,
+    "query": "What known product issues have documented workarounds?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "known_issues_and_workarounds_log.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "known_issues_and_workarounds_log.pdf",
+      "product_troubleshooting_manual_core_platform.pdf",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "product_manual_enterprise_suite_v3.docx",
+      "customer_success_escalation_runbook.docx"
+    ],
+    "sparse_top_5": [
+      "known_issues_and_workarounds_log.pdf",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "product_troubleshooting_manual_core_platform.pdf",
+      "product_manual_enterprise_suite_v3.docx",
+      "faq_common_product_questions.md"
+    ],
+    "hybrid_top_5": [
+      "known_issues_and_workarounds_log.pdf",
+      "product_troubleshooting_manual_core_platform.pdf",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "product_manual_enterprise_suite_v3.docx",
+      "faq_common_product_questions.md"
+    ]
+  },
+  {
+    "query_number": 44,
+    "query": "How should support agents respond to customers in live chat?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "live_chat_response_guidelines.html"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "live_chat_response_guidelines.html",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "known_issues_and_workarounds_log.pdf",
+      "customer_success_escalation_runbook.docx",
+      "support_team_training_guide.docx"
+    ],
+    "sparse_top_5": [
+      "live_chat_response_guidelines.html",
+      "faq_common_product_questions.md",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "known_issues_and_workarounds_log.pdf",
+      "product_troubleshooting_manual_core_platform.pdf"
+    ],
+    "hybrid_top_5": [
+      "live_chat_response_guidelines.html",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "known_issues_and_workarounds_log.pdf",
+      "product_troubleshooting_manual_core_platform.pdf",
+      "product_manual_enterprise_suite_v3.docx"
+    ]
+  },
+  {
+    "query_number": 45,
+    "query": "How should support staff troubleshoot the core platform?",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "relevant_documents": [
+      "product_troubleshooting_manual_core_platform.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "product_troubleshooting_manual_core_platform.pdf",
+      "known_issues_and_workarounds_log.pdf",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "support_team_training_guide.docx",
+      "product_manual_enterprise_suite_v3.docx"
+    ],
+    "sparse_top_5": [
+      "product_troubleshooting_manual_core_platform.pdf",
+      "known_issues_and_workarounds_log.pdf",
+      "faq_common_product_questions.md",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "product_manual_enterprise_suite_v3.docx"
+    ],
+    "hybrid_top_5": [
+      "product_troubleshooting_manual_core_platform.pdf",
+      "known_issues_and_workarounds_log.pdf",
+      "product_troubleshooting_manual_mobile_app.pdf",
+      "product_manual_enterprise_suite_v3.docx",
+      "support_team_training_guide.docx"
+    ]
+  },
+  {
+    "query_number": 46,
+    "query": "What are the GDPR requirements for processing personal data?",
+    "tenant_id": "tenant_1",
+    "department": "legal",
+    "relevant_documents": [
+      "data_processing_addendum_gdpr.pdf"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 3,
+    "hybrid_rank": 2,
+    "category": "success_low_rank",
+    "dense_top_5": [
+      "regulatory_compliance_checklist_gdpr.html",
+      "data_processing_addendum_gdpr.pdf",
+      "legal_team_contacts_and_escalation.json",
+      "legal_risk_assessment_data_breach_scenarios.docx",
+      "compliance_calendar.md"
+    ],
+    "sparse_top_5": [
+      "regulatory_compliance_checklist_gdpr.html",
+      "compliance_calendar.md",
+      "data_processing_addendum_gdpr.pdf",
+      "litigation_hold_notice_archive.pdf",
+      "regulatory_compliance_checklist_soc_2.html"
+    ],
+    "hybrid_top_5": [
+      "regulatory_compliance_checklist_gdpr.html",
+      "data_processing_addendum_gdpr.pdf",
+      "compliance_calendar.md",
+      "legal_risk_assessment_data_breach_scenarios.docx",
+      "regulatory_compliance_checklist_soc_2.html"
+    ]
+  },
+  {
+    "query_number": 47,
+    "query": "What steps are required for GDPR regulatory compliance?",
+    "tenant_id": "tenant_1",
+    "department": "legal",
+    "relevant_documents": [
+      "regulatory_compliance_checklist_gdpr.html"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "regulatory_compliance_checklist_gdpr.html",
+      "compliance_calendar.md",
+      "regulatory_compliance_checklist_soc_2.html",
+      "legal_risk_assessment_data_breach_scenarios.docx",
+      "data_processing_addendum_gdpr.pdf"
+    ],
+    "sparse_top_5": [
+      "regulatory_compliance_checklist_gdpr.html",
+      "compliance_calendar.md",
+      "regulatory_compliance_checklist_soc_2.html",
+      "historical_merger_agreement_2015.pdf",
+      "litigation_hold_notice_archive.pdf"
+    ],
+    "hybrid_top_5": [
+      "regulatory_compliance_checklist_gdpr.html",
+      "compliance_calendar.md",
+      "regulatory_compliance_checklist_soc_2.html",
+      "legal_risk_assessment_data_breach_scenarios.docx",
+      "historical_merger_agreement_2015.pdf"
+    ]
+  },
+  {
+    "query_number": 48,
+    "query": "What legal risks arise from data breach scenarios?",
+    "tenant_id": "tenant_1",
+    "department": "legal",
+    "relevant_documents": [
+      "legal_risk_assessment_data_breach_scenarios.docx"
+    ],
+    "dense_rank": 2,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "legal_team_contacts_and_escalation.json",
+      "legal_risk_assessment_data_breach_scenarios.docx",
+      "vendor_non_disclosure_agreement_template.pdf",
+      "legal_case_log.csv",
+      "historical_merger_agreement_2015.pdf"
+    ],
+    "sparse_top_5": [
+      "legal_risk_assessment_data_breach_scenarios.docx",
+      "termination_clause_comparison_memo.pdf",
+      "compliance_calendar.md",
+      "legal_team_contacts_and_escalation.json",
+      "regulatory_compliance_checklist_gdpr.html"
+    ],
+    "hybrid_top_5": [
+      "legal_risk_assessment_data_breach_scenarios.docx",
+      "legal_team_contacts_and_escalation.json",
+      "compliance_calendar.md",
+      "regulatory_compliance_checklist_gdpr.html",
+      "historical_merger_agreement_2015.pdf"
+    ]
+  },
+  {
+    "query_number": 49,
+    "query": "What are the termination clause differences between contracts?",
+    "tenant_id": "tenant_1",
+    "department": "legal",
+    "relevant_documents": [
+      "termination_clause_comparison_memo.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 1,
+    "hybrid_rank": 1,
+    "category": "success_rank_1",
+    "dense_top_5": [
+      "termination_clause_comparison_memo.pdf",
+      "employment_contract_template.pdf",
+      "contract_expiration_schedule.xlsx",
+      "vendor_non_disclosure_agreement_template.pdf",
+      "master_services_agreement_globex_inc.pdf"
+    ],
+    "sparse_top_5": [
+      "termination_clause_comparison_memo.pdf",
+      "employment_contract_template.pdf",
+      "software_license_agreement.pdf",
+      "vendor_non_disclosure_agreement_template.pdf",
+      "data_processing_addendum_gdpr.pdf"
+    ],
+    "hybrid_top_5": [
+      "termination_clause_comparison_memo.pdf",
+      "employment_contract_template.pdf",
+      "vendor_non_disclosure_agreement_template.pdf",
+      "master_services_agreement_globex_inc.pdf",
+      "master_services_agreement_acme_corp.pdf"
+    ]
+  },
+  {
+    "query_number": 50,
+    "query": "What confidentiality obligations apply to vendors?",
+    "tenant_id": "tenant_1",
+    "department": "legal",
+    "relevant_documents": [
+      "vendor_non_disclosure_agreement_template.pdf"
+    ],
+    "dense_rank": 1,
+    "sparse_rank": 3,
+    "hybrid_rank": 2,
+    "category": "success_low_rank",
+    "dense_top_5": [
+      "vendor_non_disclosure_agreement_template.pdf",
+      "software_license_agreement.pdf",
+      "master_services_agreement_acme_corp.pdf",
+      "data_processing_addendum_gdpr.pdf",
+      "legal_risk_assessment_data_breach_scenarios.docx"
+    ],
+    "sparse_top_5": [
+      "employment_contract_template.pdf",
+      "software_license_agreement.pdf",
+      "vendor_non_disclosure_agreement_template.pdf",
+      "data_processing_addendum_gdpr.pdf",
+      "master_services_agreement_globex_inc.pdf"
+    ],
+    "hybrid_top_5": [
+      "software_license_agreement.pdf",
+      "vendor_non_disclosure_agreement_template.pdf",
+      "data_processing_addendum_gdpr.pdf",
+      "master_services_agreement_acme_corp.pdf",
+      "legal_risk_assessment_data_breach_scenarios.docx"
+    ]
+  }
+]

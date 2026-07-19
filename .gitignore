@@ -1,0 +1,42 @@
+# Environment
+.env
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Generated data
+data/processed/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Generated / runtime data
+data/raw_corpus/
+data/sparse_index/
+data/vector_db/
+data/test_sql/
+
+# Processed data
+data/processed/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Environment
+.env
+.venv/
+
+# Frontend
+frontend/node_modules/
+
+# Generated outputs
+validation_output.txt

@@ -1,0 +1,84 @@
+[
+  {
+    "name": "refund_customer_tier_followup",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "first_query": "What is the refund policy for enterprise customers?",
+    "follow_up_query": "What about standard customers?",
+    "expected_documents": [
+      "refund_policy_standard_customers.pdf",
+      "refund_policy_enterprise_customers.pdf"
+    ]
+  },
+  {
+    "name": "api_rate_limit_followup",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "first_query": "Which API endpoint handles document ingestion?",
+    "follow_up_query": "What is its rate limit?",
+    "expected_documents": [
+      "api_rate_limiting_design_document.pdf"
+    ]
+  },
+  {
+    "name": "architecture_owner_followup",
+    "tenant_id": "tenant_1",
+    "department": "engineering",
+    "first_query": "What is the architecture of the company's microservices?",
+    "follow_up_query": "Who owns the Query Service?",
+    "expected_documents": [
+      "system_architecture_overview.pdf"
+    ]
+  },
+  {
+    "name": "benefits_followup",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "first_query": "How do employees enroll in benefits?",
+    "follow_up_query": "What steps are involved?",
+    "expected_documents": [
+      "benefits_enrollment_guide_2025.pdf"
+    ]
+  },
+  {
+    "name": "finance_followup",
+    "tenant_id": "tenant_1",
+    "department": "finance",
+    "first_query": "How does the procurement approval process work?",
+    "follow_up_query": "What are its approval limits?",
+    "expected_documents": [
+      "procurement_approval_workflow.html"
+    ]
+  },
+  {
+    "name": "support_tier_followup",
+    "tenant_id": "tenant_1",
+    "department": "support",
+    "first_query": "What service levels are provided for different support tiers?",
+    "follow_up_query": "What about the highest tier?",
+    "expected_documents": [
+      "service_level_agreement_support_tiers.pdf"
+    ]
+  },
+  {
+    "name": "gdpr_followup",
+    "tenant_id": "tenant_1",
+    "department": "legal",
+    "first_query": "What are the GDPR requirements for processing personal data?",
+    "follow_up_query": "What compliance steps are required?",
+    "expected_documents": [
+      "regulatory_compliance_checklist_gdpr.html",
+      "data_processing_addendum_gdpr.pdf"
+    ]
+  },
+  {
+    "name": "remote_work_followup",
+    "tenant_id": "tenant_1",
+    "department": "hr",
+    "first_query": "What are the rules for working remotely?",
+    "follow_up_query": "Who approves it?",
+    "expected_documents": [
+      "remote_work_policy.html"
+    ]
+  }
+]
