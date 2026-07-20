@@ -112,60 +112,62 @@ class RAGService:
         # 3. SEMANTIC CACHE LOOKUP
         # --------------------------------------------------
 
-        query_vector = self.embedding_service.embed_query(effective_query)
-
-        cache_match = (
-            self.semantic_cache_store.search(
-                vector=query_vector,
-                tenant_id=str(
-                    request.user.tenant_id
-                ),
-                authorized_departments=(
-                    scope.departments
-                ),
-            )
+        query_vector = self.embedding_service.embed_query(
+            effective_query
         )
 
-        if cache_match is not None:
+        cache_matches = self.semantic_cache_store.search(
+            vector=query_vector,
+            tenant_id=str(request.user.tenant_id),
+            authorized_departments=scope.departments,
+        )
 
-            cache_id = cache_match.payload.get("cache_id")
+        for cache_match in cache_matches:
 
-            if cache_id:
+            cache_id = (
+                cache_match.payload or {}
+            ).get("cache_id")
 
-                cached = self.cache_service.get_response(cache_id)
+            if not cache_id:
+                continue
 
-                if cached is not None:
+            cached = self.cache_service.get_response(
+                cache_id
+            )
 
-                    print("SEMANTIC CACHE HIT")
+            # Qdrant point exists, but Redis entry
+            # may have expired. Try the next candidate.
+            if cached is None:
+                continue
 
-                    final_answer = cached["answer"]
+            print("SEMANTIC CACHE HIT")
 
-                    final_sources = cached.get("sources",[],)
+            final_answer = cached["answer"]
 
-                    # Store this interaction
-                    # in conversation memory.
-                    self.memory_service.add_turn(
-                        tenant_id=request.user.tenant_id,
-                        conversation_id=request.conversation_id,
-                        user_message=request.query,
-                        assistant_message=final_answer,
-                    )
+            final_sources = cached.get(
+                "sources",
+                [],
+            )
 
-                    return RAGResponse(
-                        answer=final_answer,
-                        sources=final_sources,
-                        metadata={
-                            **cached.get(
-                                "metadata",
-                                {},
-                            ),
-                            "cache_hit": True,
-                            "cache_type": (
-                                "semantic"
-                            ),
-                        },
-                    )
+            self.memory_service.add_turn(
+                tenant_id=request.user.tenant_id,
+                conversation_id=request.conversation_id,
+                user_message=request.query,
+                assistant_message=final_answer,
+            )
 
+            return RAGResponse(
+                answer=final_answer,
+                sources=final_sources,
+                metadata={
+                    **cached.get(
+                        "metadata",
+                        {},
+                    ),
+                    "cache_hit": True,
+                    "cache_type": "semantic",
+                },
+            )
 
         print("SEMANTIC CACHE MISS")
 
@@ -471,7 +473,11 @@ class RAGService:
         # --------------------------------------------------
         # 16. SEMANTIC CACHE STORE
         # --------------------------------------------------
-
+        print("CACHE DEBUG")
+        print("grounded_answer_blocked:", grounded_answer_blocked)
+        print("final_sources:", final_sources)
+        print("is_abstention:", self._is_abstention(final_answer))
+        print("redis_client:", self.cache_service.client is not None)
         if (
             not grounded_answer_blocked
             and final_sources
@@ -500,7 +506,7 @@ class RAGService:
             )
 
             if cache_saved:
-
+                print("REDIS CACHE SAVED:", cache_id)
                 self.semantic_cache_store.store(
                     vector=query_vector,
                     cache_id=cache_id,
@@ -508,6 +514,10 @@ class RAGService:
                     answer_departments=answer_departments,
                     query=effective_query,
                 )
+                print("SEMANTIC CACHE STORED:", cache_id)
+
+            else:
+                print("REDIS CACHE NOT SAVED")
         # --------------------------------------------------
         # 17. STORE CONVERSATION MEMORY
         # --------------------------------------------------

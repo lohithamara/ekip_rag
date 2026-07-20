@@ -10,9 +10,7 @@ from qdrant_client.models import (
     VectorParams,
 )
 
-from rag.cache.semantic_config import (
-    SemanticCacheConfig,
-)
+from rag.cache.semantic_config import SemanticCacheConfig
 
 
 class SemanticCacheStore:
@@ -27,21 +25,16 @@ class SemanticCacheStore:
         self.vector_size = vector_size
         self.config = config
 
-    def ensure_collection(
-        self,
-    ) -> bool:
+    def ensure_collection(self) -> bool:
 
         try:
-
             if self.client.collection_exists(
                 self.config.collection_name
             ):
                 return True
 
             self.client.create_collection(
-                collection_name=(
-                    self.config.collection_name
-                ),
+                collection_name=self.config.collection_name,
                 vectors_config=VectorParams(
                     size=self.vector_size,
                     distance=Distance.COSINE,
@@ -49,24 +42,18 @@ class SemanticCacheStore:
             )
 
             self.client.create_payload_index(
-                collection_name=(
-                    self.config.collection_name
-                ),
+                collection_name=self.config.collection_name,
                 field_name="tenant_id",
-                field_schema=(
-                    PayloadSchemaType.KEYWORD
-                ),
+                field_schema=PayloadSchemaType.KEYWORD,
             )
 
             return True
 
         except Exception as exc:
-
             print(
                 "Semantic cache collection error:",
                 exc,
             )
-
             return False
 
     def search(
@@ -74,29 +61,24 @@ class SemanticCacheStore:
         vector: list[float],
         tenant_id: str,
         authorized_departments: tuple[str, ...],
-    ):
+    ) -> list:
 
         if not self.config.enabled:
-            return None
+            return []
 
         try:
-
             if not self.ensure_collection():
-                return None
+                return []
 
             result = self.client.query_points(
-                collection_name=(
-                    self.config.collection_name
-                ),
+                collection_name=self.config.collection_name,
                 query=vector,
                 query_filter=Filter(
                     must=[
                         FieldCondition(
                             key="tenant_id",
                             match=MatchValue(
-                                value=str(
-                                    tenant_id
-                                )
+                                value=str(tenant_id)
                             ),
                         ),
                     ]
@@ -110,17 +92,20 @@ class SemanticCacheStore:
                 authorized_departments
             )
 
+            matches = []
+
             for point in result.points:
 
+                # Results are score ordered, so once the
+                # threshold is not met, remaining points
+                # can also be ignored.
                 if (
                     point.score
                     < self.config.similarity_threshold
                 ):
                     continue
 
-                payload = (
-                    point.payload or {}
-                )
+                payload = point.payload or {}
 
                 answer_departments = set(
                     payload.get(
@@ -129,32 +114,31 @@ class SemanticCacheStore:
                     )
                 )
 
-                # Never allow malformed/legacy cache
-                # entries with no department information.
+                # Ignore old or malformed cache entries.
                 if not answer_departments:
                     continue
 
                 # Admin / unrestricted access.
                 if "*" in authorized:
-                    return point
+                    matches.append(point)
+                    continue
 
-                # All departments used to generate
-                # the cached answer must be authorized.
+                # A cached answer is safe only when the
+                # current user can access every department
+                # used to generate that answer.
                 if answer_departments.issubset(
                     authorized
                 ):
-                    return point
+                    matches.append(point)
 
-            return None
+            return matches
 
         except Exception as exc:
-
             print(
                 "Semantic cache search failed:",
                 exc,
             )
-
-            return None
+            return []
 
     def store(
         self,
@@ -172,14 +156,11 @@ class SemanticCacheStore:
             return False
 
         try:
-
             if not self.ensure_collection():
                 return False
 
             self.client.upsert(
-                collection_name=(
-                    self.config.collection_name
-                ),
+                collection_name=self.config.collection_name,
                 points=[
                     PointStruct(
                         id=str(uuid4()),
@@ -202,10 +183,8 @@ class SemanticCacheStore:
             return True
 
         except Exception as exc:
-
             print(
                 "Semantic cache store failed:",
                 exc,
             )
-
             return False
