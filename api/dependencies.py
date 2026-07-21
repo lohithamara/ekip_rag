@@ -69,10 +69,10 @@ from rag.cache.service import RedisCacheService
 from rag.cache.semantic_config import SemanticCacheConfig
 from rag.cache.semantic_store import SemanticCacheStore
 
-db = SessionLocal()
-
 def create_container() -> ApplicationContainer:
 
+    db = SessionLocal()
+    
     vector_store = QdrantVectorStore(VectorDBConfig())
 
     redis_cache_service = RedisCacheService(RedisConfig())

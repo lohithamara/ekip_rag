@@ -19,7 +19,7 @@ class LLMConfig:
         "GROQ_API_KEY"
     )
 
-    temperature: float = 0.0
+    temperature: float = 0.1
 
     max_tokens: int = 512
 

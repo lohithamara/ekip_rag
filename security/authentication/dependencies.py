@@ -44,10 +44,10 @@ def get_current_user(
 
     try:
         payload = jwt_service.verify_token(token)
-        print("JWT payload:", payload)
+        # print("JWT payload:", payload)
 
     except JWTError as exc:
-        print("JWT ERROR:", repr(exc))
+        # print("JWT ERROR:", repr(exc))
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail=str(exc),

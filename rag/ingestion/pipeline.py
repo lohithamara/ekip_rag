@@ -43,5 +43,35 @@ class DocumentIngestionPipeline:
         department: str,
         content_hash: str,
     ):
+        s3_key = self._upload_original(
+            local_file,
+            tenant_id,
+            department,
+            content_hash,
+        )
 
-        raise NotImplementedError
+        raw_document = self._extract_raw(
+            s3_key,
+            tenant_id,
+            department,
+            content_hash,
+        )
+
+        clean_document = self._clean(
+            raw_document,
+        )
+
+        chunks = self._chunk(
+            clean_document,
+        )
+
+        embeddings = self._embed(
+            chunks,
+        )
+
+        self._index(
+            chunks,
+            embeddings,
+        )
+
+        

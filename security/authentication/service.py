@@ -61,7 +61,7 @@ class AuthenticationService:
         token = (
             self.jwt_service
             .create_token(
-                user.id
+                str(user.id)
             )
         )
 

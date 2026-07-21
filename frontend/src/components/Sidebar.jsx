@@ -30,7 +30,7 @@ function Sidebar() {
 
     localStorage.clear();
 
-    navigate("/");
+    navigate("/",{ replace: true });
   };
 
 

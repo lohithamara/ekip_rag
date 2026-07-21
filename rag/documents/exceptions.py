@@ -41,7 +41,7 @@ class DepartmentNotFoundError(Exception):
             f"Department '{department}' not found."
         )
 
-class DepartmentAccessDeniedError(Exception):
+class DepartmentAccessDeniedError(PermissionError):
     
     def __init__(
         self,

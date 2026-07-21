@@ -3,10 +3,7 @@ from dataclasses import dataclass
 from ingestion.workers.document_ingestion_worker import DocumentIngestionWorker
 from rag.documents.service import DocumentService
 from rag.service.service import RAGService
-from rag.vector_store.qdrant_store import (
-    QdrantVectorStore,
-)
-
+from rag.vector_store.qdrant_store import QdrantVectorStore
 from security.authorization.service import AuthorizationService
 
 @dataclass

@@ -112,40 +112,6 @@ class ContextBuilder:
             unique.append(chunk)
 
         return unique
-    
-    # def _is_complete_unit(
-    #     self,
-    #     text: str,
-    # ) -> bool:
-
-    #     text = text.strip()
-
-    #     if not text:
-    #         return False
-
-    #     # Table rows are valid units.
-    #     if "|" in text:
-    #         return True
-
-    #     # Headings are valid.
-    #     if text.startswith("#"):
-    #         return True
-
-    #     # Require a reasonable minimum amount of content.
-    #     if len(text.split()) < 4:
-    #         return False
-
-    #     return text.endswith(
-    #         (
-    #             ".",
-    #             "?",
-    #             "!",
-    #             ":",
-    #             ";",
-    #             ")",
-    #             "]",
-    #         )
-    #     )
 
     def _is_complete_unit(self, text: str) -> bool:
         return bool(text.strip())
